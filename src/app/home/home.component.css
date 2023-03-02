@@ -1,0 +1,16 @@
+.bodyimg  {
+    font-style: italic;
+    position: center;
+    padding: 200px;
+    width: 60%;
+    left: 1800px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #161f6d;
+  }
+  .bodyimg h1 {
+    color: #094a65;
+    font-style: Cursive;
+    height: 100%;
+    width: 100%;
+  }

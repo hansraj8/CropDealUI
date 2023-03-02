@@ -2,8 +2,16 @@
     <ng-container *ngFor="let item of cropForm">
      <div class="col-sm-4 ">
        <div class="card second" >
-        <img style="height: 220px;width:auto" src="{{item.cropImage}}" alt="Image Size 720x400" class="mt-3 mx-3">
-                                
+        <!-- <img style="height: 220px;width:auto" src="/src/assets/images/apple.jpg" alt="Image Size 720x400" class="mt-3 mx-3 "> -->
+        <img *ngIf="item.cropName == 'apple'" class="card-img-top" src="assets/images/apple.jpg" alt="Card image cap" style="height: 340px;">  
+        <img *ngIf="item.cropName == 'tomato'" class="card-img-top" src="assets/images/tomato.jpg" alt="Card image cap" style="height: 340px;">                      
+        <img *ngIf="item.cropName == 'maize'" class="card-img-top" src="assets/images/Corn.jpg" alt="Card image cap" style="height: 340px;">
+        <img *ngIf="item.cropName == 'banana'" class="card-img-top" src="assets/images/banana.png" alt="Card image cap" style="height: 340px;">                      
+        <img *ngIf="item.cropName == 'carrot'" class="card-img-top" src="assets/images/carrot.jpg" alt="Card image cap" style="height: 340px;">                      
+        <img *ngIf="item.cropName == 'brinjal'" class="card-img-top" src="assets/images/brinjal.jpg" alt="Card image cap" style="height: 340px;">                      
+
+                              
+
         <div class="card-body">
         <div class="flex justify-between ">
             <h2 class="tracking-widest text-gray-800 text-sm">Crop : {{item.cropName}}</h2>
